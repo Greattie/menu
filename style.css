@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+/* WRAPPER */
+.wrapper{
+    display: grid;
+    place-items: center;
+}
+
+/* WRAPPER TEXT */
+.wrapper-text{
+    border: 2px solid red;
+    padding: .2em;
+}
+.wrapper-text h1, .buttons{
+    text-align: center;
+    margin: .2em 0;
+    padding: .5em;
+}
+.btn{
+border: 2px solid purple;
+width: 90px;
+padding: .3em;
+cursor: pointer;
+border-radius: 5px;
+margin-left: 1em;
+background: none;
+}
+.btn:hover{
+    color: white;
+    background-color: rgb(223, 189, 254);
+}
+
+/* MENU CONTAINER */
+.menu-container{
+    border: 5px solid purple;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    display: flex;
+    margin: 1em;
+    border: 2px solid black;
+}
+.card img{
+    width: 100%;
+    height: 10em;
+}
