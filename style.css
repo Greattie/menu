@@ -45,7 +45,8 @@ body {
 /* MENU CONTAINER */
 .menu-container {
   margin-top: 2em;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-evenly;
 }
 .card {
@@ -58,6 +59,7 @@ body {
   border: 5px solid purple;
   border-radius: 5px;
   object-fit: contain;
+  max-height: 15rem;
 }
 .img img {
   width: 100%;
