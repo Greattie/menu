@@ -1,80 +1,79 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    min-height: 100vh;
+body {
+  min-height: 100vh;
 }
 
-.container{
-    width: 80%;
-    margin: 0 auto;
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 /* WRAPPER */
-.wrapper{
-    display: grid;
-    place-items: center;
+.wrapper {
+  display: grid;
+  place-items: center;
 }
 
 /* WRAPPER TEXT */
-.wrapper-text{
-    border: 2px solid red;
-    padding: .2em;
+.wrapper-text {
+  padding: 0.2em;
 }
-.wrapper-text h1, .buttons{
-    text-align: center;
-    margin: .2em 0;
-    padding: .5em;
+.wrapper-text h1,
+.buttons {
+  text-align: center;
+  margin: 0.2em 0;
+  padding: 0.5em;
 }
-.btn{
-border: 2px solid purple;
-width: 90px;
-padding: .3em;
-cursor: pointer;
-border-radius: 5px;
-margin-left: 1em;
-background: none;
+.btn {
+  border: 2px solid purple;
+  width: 90px;
+  padding: 0.3em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 1em;
+  background: none;
 }
-.btn:hover{
-    color: white;
-    background-color: rgb(223, 189, 254);
+.btn:hover {
+  color: white;
+  background-color: rgb(223, 189, 254);
 }
 
 /* MENU CONTAINER */
-.menu-container{
-    border: 5px solid purple;
-    margin-top: 2em;
-    display: flex;
-    justify-content: space-evenly;
+.menu-container {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-evenly;
 }
-.card{
-    display: flex;
-    margin: 1em;
-    gap: 1em;
-    border: 2px solid black;
+.card {
+  display: flex;
+  margin: 1em;
+  gap: 1em;
 }
-.img{
-    width: 40%;
-border: 5px solid yellow;
-object-fit: contain;
+.img {
+  width: 40%;
+  border: 5px solid purple;
+  border-radius: 5px;
+  object-fit: contain;
 }
-.img img{
-    width: 100%;
-    height: 100%;
+.img img {
+  width: 100%;
+  height: 100%;
 }
-.card-text{
-    width: 50%;
+.card-text {
+  width: 50%;
 }
-.card-text-header{
-    display: flex;
-    padding: .5em;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid red;
+.card-text-header {
+  display: flex;
+  padding: 0.5em;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dotted purple;
 }
-.card-description{
-    line-height: 1.5;
-    padding: .5em 0;
+.card-description {
+  line-height: 1.5;
+  padding: 0.5em 0;
 }
