@@ -96,7 +96,7 @@ const menu = [
       <div class="card-text">
         <div class="card-text-header">
           <p class="title">${item.title}</p>
-          <p class="price">${item.price}</p>
+          <p class="price">$${item.price}</p>
         </div>
         <div class="card-description">
 ${item.desc}
@@ -108,4 +108,25 @@ ${item.desc}
       })
       displaySection = displaySection.join('')
       section.innerHTML = displaySection
+
+      allBtns.forEach(function(btns){
+        //console.log(btns)
+        if(btns.textContent === 'All'){
+          btns.addEventListener('click', function(){
+            section.innerHTML = displaySection
+          })
+        }
+        else if(btns.textContent === 'Breakfast'){
+          btns.addEventListener('click', function(){ 
+            menu.filter(function(item){
+              if(item === btns.textContent){
+                
+              }
+            })
+          })
+        }
+      })
 })
+
+const allBtns = document.querySelectorAll('.btn')
+
