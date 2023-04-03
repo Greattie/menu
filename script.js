@@ -80,3 +80,29 @@ const menu = [
       desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
     },
   ];
+
+  const section = document.querySelector('.card-wrapper')
+  console.log(section)
+window.addEventListener('DOMContentLoaded', function(){
+   let displaySection =  menu.map(function(item){
+        
+    return `
+    <div class="card">
+    <div class="img">
+      <img src=${item.img} alt=${item.title} />
+    </div>
+
+    <div class="card-text">
+      <div class="card-text-header">
+        <p class="title">${item.title}</p>
+        <p class="price">${item.price}</p>
+      </div>
+      <div class="card-description">
+${item.desc}
+      </div>
+    </div>
+  </div>
+ `
+      })
+      displaySection = displaySection
+})
