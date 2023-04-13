@@ -89,7 +89,7 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 function showMenu(menuArr) {
-  let displaySection = menu.map(function (item) {
+  let displaySection = menuArr.map(function (item) {
     return `<div class="card-wrapper">
     <!-- MENU CARD 1 -->
     <div class="card">
@@ -117,14 +117,18 @@ ${item.desc}
 allBtns.forEach(function (btns) {
   btns.addEventListener("click", function (e) {
     const category = e.currentTarget.dataset.id;
+    console.log(category)
     const menuCategory = menu.filter(function (menuItem) {
       if (menuItem.category === category) {
+       // console.log(menuItem.category)
         return menuItem;
       }
     });
+    console.log(menuCategory)
     if (category === "all") {
       showMenu(menu);
-    } else {
+    } 
+    else {
       showMenu(menuCategory);
     }
   });
